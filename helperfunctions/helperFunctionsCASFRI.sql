@@ -6060,7 +6060,7 @@ RETURNS text AS $$
     partial_year = TT_SubstringText(dist_type, '4'::text, '2'::text);
 
     -- if between 50 - 99, year is in 1900's
-    IF TT_IsBetween(partial_year, '50'::text, '99'::text, TRUE, TRUE) THEN
+    IF TT_IsBetween(partial_year, '50'::text, '99'::text, TRUE::text, TRUE::text ) THEN
       RETURN TT_Concat('{''19'', ' || partial_year || '}'::text, ''::text);
     ELSE -- 2000's
       RETURN TT_Concat('{''20'', ' || partial_year || '}'::text, ''::text);
