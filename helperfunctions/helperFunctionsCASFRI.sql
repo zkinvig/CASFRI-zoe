@@ -4747,7 +4747,7 @@ RETURNS boolean AS $$
    	-- PE02
    	---------
    	-- assign source values to variables depending on the inventory id
-       IF inventory_id IN('PE02') THEN
+       IF inventory_id IN('PE02', 'PE03') THEN
          _class1 = _source_vals[1];
          _landuse = _source_vals[2];
          _subuse = _source_vals[3];
