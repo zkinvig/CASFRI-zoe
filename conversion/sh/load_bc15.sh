@@ -34,7 +34,7 @@ srcFullPath_L1="$friDir/BC/$inventoryID/data/inventory/${srcFileName_L1}_2022.gd
 srcFileName_L2=${srcFileName}_L2_POLY
 srcFullPath_L2="$friDir/BC/$inventoryID/data/inventory/${srcFileName_L2}_2022.gdb"
 
-fullTargetTableName=$targetFRISchema.bc14
+fullTargetTableName=$targetFRISchema.bc15
 tableName_L1=${fullTargetTableName}_layer_1
 tableName_L2=${fullTargetTableName}_layer_2
 
