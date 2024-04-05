@@ -29,7 +29,7 @@ fullTargetTableName=$targetFRISchema.nb03
 -nln $fullTargetTableName $layer_creation_options $other_options \
 -nlt PROMOTE_TO_MULTI -nlt CONVERT_TO_LINEAR \
 -emptyStrAsNull \
--sql "SELECT *, '$srcFilename' AS src_filename, '$inventoryID' AS inventory_id FROM $srcLayerName WHERE holder != 16 OR holder != 20" \
+-sql "SELECT *, '$srcFilename' AS src_filename, '$inventoryID' AS inventory_id FROM $srcLayerName" \
 -progress $overwrite_tab
 
 source ./common_postprocessing.sh
