@@ -1585,6 +1585,7 @@ RETURNS text AS $$
 				  WHEN rulelc = 'nl_nli01_crown_closure_validation' THEN '-8886'
 				  WHEN rulelc = 'nl_nli01_height_validation' THEN '-8886'
 				  WHEN rulelc = 'nb_hasCountOfNotNull' THEN '-8886'
+				  WHEN rulelc = 'pe_pei02_map_dist_year' THEN '-8886'
                   ELSE
                    TT_DefaultErrorCode(rulelc, targetTypelc) END;
     ELSIF targetTypelc = 'geometry' THEN
