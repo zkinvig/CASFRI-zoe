@@ -11,11 +11,11 @@ friDir=/home/casfri
 #################################################################
 pgport=5432
 pghost=localhost
-pguser=postgres
-pgpassword=postgres
+pguser=casfri
+pgpassword=casfri
 
 # Target PostgreSQL database
-pgdbname=cas
+pgdbname=nifd
 
 # Target schema where raw source inventories should be loaded
 targetFRISchema=rawfri
@@ -57,7 +57,7 @@ fullList=(invList1 invList2 invList3 invList4 invList5 invList6 invList7)
 #################################################################
 # GDAL installation folder
 #################################################################
-gdalFolder="C:/Program Files/GDAL"
+gdalFolder="/usr/local/bin"
 
 # Set this to true if using GDAL version 1.11.4
 gdal_1_11_4=False

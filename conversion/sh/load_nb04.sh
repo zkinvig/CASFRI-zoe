@@ -17,9 +17,8 @@ inventoryID=NB04
 NB_subFolder=NB/$inventoryID/data/inventory/
 
 srcFilename=LandBase_2024v1
-srcLayerName=SDEOWNER_Landbase
-#srcFileFullPath="$friDir/$NB_subFolder$srcFilename.gdb"
-srcFileFullPath="/home/casfri/LandBase_2024v1.gdb"
+srcLayerName=LandBase2024v1
+srcFileFullPath="/home/casfri/$srcFilename.gdb"
 fullTargetTableName=$targetFRISchema.nb04
 
 ########################################## Process ######################################
