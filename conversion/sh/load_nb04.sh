@@ -16,7 +16,7 @@ source ./common.sh
 inventoryID=NB04
 NB_subFolder=NB/$inventoryID/data/inventory/
 
-srcFilename=NB_Landbase_Oct1_2019
+srcFilename=LandBase_2024v1
 srcLayerName=SDEOWNER_Landbase
 #srcFileFullPath="$friDir/$NB_subFolder$srcFilename.gdb"
 srcFileFullPath="/home/casfri/LandBase_2024v1.gdb"
