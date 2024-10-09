@@ -15,12 +15,13 @@
 source ./common.sh
 
 inventoryID=NB05
-NB_subFolder=NB/$inventoryID/data/inventory/
+fileInventoryID=NB03
+NB_subFolder=NB/$fileInventoryID/data/inventory/
 
 srcFilename=NB_Landbase_Oct1_2019
 srcLayerName=SDEOWNER_Landbase
 srcFileFullPath="$friDir/$NB_subFolder$srcFilename.gdb"
-fullTargetTableName=$targetFRISchema.nb05
+fullTargetTableName=$targetFRISchema.$inventoryID
 
 ########################################## Process ######################################
 

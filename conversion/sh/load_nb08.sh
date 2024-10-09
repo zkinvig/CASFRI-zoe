@@ -15,12 +15,13 @@
 source ./common.sh
 
 inventoryID=NB08
-NB_subFolder=NB/$inventoryID/data/inventory/
+fileInventoryID=NB06
+NB_subFolder=NB/$fileInventoryID/data/inventory/
 
-srcFilename=LandBase_2024v1
-srcLayerName=LandBase2024v1
-srcFileFullPath="/home/casfri/$srcFilename.gdb"
-fullTargetTableName=$targetFRISchema.nb08
+srcFilename=NB_Landbase_2024
+srcLayerName=SDEOWNER_Landbase
+srcFileFullPath="$friDir/$NB_subFolder$srcFilename.gdb"
+fullTargetTableName=$targetFRISchema.$inventoryID
 
 ########################################## Process ######################################
 
