@@ -19,7 +19,7 @@ fileInventoryID=NB06
 NB_subFolder=NB/$fileInventoryID/data/inventory/
 
 srcFilename=NB_Landbase_2024
-srcLayerName=SDEOWNER_Landbase
+srcLayerName=LandBase2024v1
 srcFileFullPath="$friDir/$NB_subFolder$srcFilename.gdb"
 fullTargetTableName=$targetFRISchema.$inventoryID
 
