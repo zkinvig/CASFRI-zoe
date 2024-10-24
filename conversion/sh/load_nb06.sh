@@ -31,7 +31,9 @@ fullTargetTableName=$targetFRISchema.$inventoryID
 -nln $fullTargetTableName $layer_creation_options $other_options \
 -nlt PROMOTE_TO_MULTI -nlt CONVERT_TO_LINEAR \
 -emptyStrAsNull \
--sql "SELECT *, '$srcFilename' AS src_filename, '$inventoryID' AS inventory_id FROM $srcLayerName WHERE holder IS NULL OR holder NOT IN (16, 20)" \
+-sql "SELECT *, '$srcFilename' AS src_filename, '$inventoryID' AS inventory_id FROM $srcLayerName WHERE holder IS NULL OR holder NOT IN (16, 20);
+ALTER TABLE $fullTargetTableName ALTER COLUMN stdlab TYPE TEXT;
+UPDATE $fullTargetTableName SET stdlab = '' WHERE stdlab IS NULL;" \
 -progress $overwrite_tab
 
 source ./common_postprocessing.sh
